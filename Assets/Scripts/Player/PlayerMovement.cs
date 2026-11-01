@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashCooldown;
     [SerializeField] private float dashTimeActive;
 
+    public Vector3 LookDirection;
+
     private float dashTimer;
 
     bool wantsToDash = false;
@@ -71,6 +73,11 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+
+        if (moveInput.magnitude > 0)
+        {
+            LookDirection = new Vector3(moveInput.x, 0, moveInput.y).normalized;
+        }
 
 
         transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * Time.fixedDeltaTime * moveMultiplier);

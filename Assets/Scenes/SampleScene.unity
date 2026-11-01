@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 232080299}
   - component: {fileID: 232080298}
   - component: {fileID: 232080300}
+  - component: {fileID: 232080301}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -436,6 +437,20 @@ MonoBehaviour:
   dashMultiplier: 7
   dashCooldown: 0.5
   dashTimeActive: 0.15
+  LookDirection: {x: 0, y: 0, z: 0}
+--- !u!114 &232080301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232080297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d29d0225cf491449818decfac9357d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttacking
+  attackPrefab: {fileID: 9149260695133719327, guid: d57164bf65e86a542890ed0ca350b037, type: 3}
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
